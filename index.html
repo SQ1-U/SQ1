@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SQ1 Messenger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>SQ1</h1>
+  <div id="auth">
+    <input id="username" placeholder="Username">
+    <button onclick="login()">Login / Sign up</button>
+  </div>
+  <div id="chat" class="hidden">
+    <div class="sidebar">
+      <h3>Friends</h3>
+      <input id="friendName" placeholder="Add friend">
+      <button onclick="addFriend()">Add</button>
+      <ul id="friends"></ul>
+    </div>
+    <div class="messages">
+      <h3 id="chatWith">Select a friend</h3>
+      <div id="msgs"></div>
+      <input id="msgInput" placeholder="Type message">
+      <button onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
